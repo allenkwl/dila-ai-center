@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外部動態入口 | AI人文社科創新與數位典藏研究中心</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nav-container"></div>
+
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item">重要消息</li>
+        <li class="breadcrumb-item active">外部動態入口</li>
+      </ol>
+    </nav>
+    <h1>外部動態入口</h1>
+    <p style="color:rgba(255,255,255,.7);margin:0">Facebook、YouTube、Google Drive 動態連結整合</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="content-card text-center h-100">
+          <div style="font-size:4rem;color:#1877F2;margin-bottom:1rem"><i class="fab fa-facebook-square"></i></div>
+          <h4 style="color:var(--primary)">Facebook 粉絲專頁</h4>
+          <p style="font-size:.9rem;color:var(--text-muted)">
+            日常活動花絮、宣傳消息、即時更新。
+            工作坊花絮、演講分享、AI 小知識等輕量資訊皆以 Facebook 為主要發布平台。
+          </p>
+          <a href="https://www.facebook.com" target="_blank" class="btn-primary-custom d-block" style="background:#1877F2;border-color:#1877F2">
+            <i class="fab fa-facebook me-1"></i>前往粉絲專頁
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="content-card text-center h-100">
+          <div style="font-size:4rem;color:#FF0000;margin-bottom:1rem"><i class="fab fa-youtube"></i></div>
+          <h4 style="color:var(--primary)">YouTube 頻道</h4>
+          <p style="font-size:.9rem;color:var(--text-muted)">
+            工作坊完整錄影、演講影音、自主學習課程影片。
+            完整影音內容以 YouTube 為主要影音平台，方便隨時重播學習。
+          </p>
+          <a href="https://www.youtube.com" target="_blank" class="btn-primary-custom d-block" style="background:#FF0000;border-color:#FF0000">
+            <i class="fab fa-youtube me-1"></i>前往 YouTube 頻道
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="content-card text-center h-100">
+          <div style="font-size:4rem;color:#4285F4;margin-bottom:1rem"><i class="fab fa-google-drive"></i></div>
+          <h4 style="color:var(--primary)">Google Drive 資料夾</h4>
+          <p style="font-size:.9rem;color:var(--text-muted)">
+            大型教材檔案、課程投影片、申請表格。
+            官網提供預覽，完整下載連結至 Google Drive 共用資料夾（需申請授權）。
+          </p>
+          <a href="mailto:ai@dila.edu.tw?subject=申請 Google Drive 存取" class="btn-primary-custom d-block" style="background:#4285F4;border-color:#4285F4">
+            <i class="fab fa-google-drive me-1"></i>申請存取授權
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="info-box mt-5">
+      <h5 style="color:var(--primary)"><i class="fas fa-info-circle me-2"></i>資訊發布原則</h5>
+      <div class="row g-3 mt-1">
+        <div class="col-md-4">
+          <strong style="font-size:.9rem">官方網站</strong>
+          <p style="font-size:.85rem;color:var(--text-muted);margin-top:.3rem">正式公告、服務說明、法規文件、需長期查詢的資訊</p>
+        </div>
+        <div class="col-md-4">
+          <strong style="font-size:.9rem">Facebook 粉專</strong>
+          <p style="font-size:.85rem;color:var(--text-muted);margin-top:.3rem">日常動態、活動花絮、宣傳、即時消息</p>
+        </div>
+        <div class="col-md-4">
+          <strong style="font-size:.9rem">YouTube / Google Drive</strong>
+          <p style="font-size:.85rem;color:var(--text-muted);margin-top:.3rem">影音內容、大型檔案、課程資料</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/components.js"></script>
+<script>loadNav('news'); loadFooter();</script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>重點計畫 | AI人文社科創新與數位典藏研究中心</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="nav-container"></div>
+
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item">計畫與資源</li>
+        <li class="breadcrumb-item active">重點計畫</li>
+      </ol>
+    </nav>
+    <h1>115 學年度重點計畫</h1>
+    <p style="color:rgba(255,255,255,.7);margin:0">五大核心計畫，推動本校 AI 智慧轉型</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <!-- Project 01 -->
+    <div class="content-card mb-4">
+      <div class="row align-items-start g-4">
+        <div class="col-auto">
+          <div style="font-family:'Noto Serif TC',serif;font-size:3rem;font-weight:700;color:var(--border);line-height:1">01</div>
+        </div>
+        <div class="col">
+          <span class="section-badge">基礎設施</span>
+          <h3 class="mt-1" style="color:var(--primary)">高速 AI 硬體基礎建設與環境部署</h3>
+          <p>
+            「硬體如爐，佛法如金」。要煉就頂尖的人文 AI 應用，強大的運算基礎設施是不可或缺的熔爐。
+            AI 中心將以 NVIDIA H200 為核心戰略節點，建立一套在人文學界領先的高規格叢集。
+            透過 MIG（多執行個體 GPU）與 Docker 容器化技術，將昂貴的 GPU 資源進行精細化分割，
+            同時支援多個研究團隊並行運算，確保資源利用率最大化。
+          </p>
+          <h6 style="color:var(--primary)">現有 GPU 設備</h6>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered" style="font-size:.85rem">
+              <thead style="background:var(--bg-cream)">
+                <tr>
+                  <th>設備</th>
+                  <th>性質與經費來源</th>
+                  <th>策略角色</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Supermicro 伺服器（H200 GPU×2）</strong></td>
+                  <td>校級經費投資（建置中）</td>
+                  <td>執行生成式 AI 與法鼓山專屬 LLM 預訓練與微調</td>
+                </tr>
+                <tr>
+                  <td><strong>RTX 3090 / 4090</strong></td>
+                  <td>國科會經費支持</td>
+                  <td>核心運算，支援中型模型訓練、RAG 實驗</td>
+                </tr>
+                <tr>
+                  <td><strong>RTX 2080 / Tesla M10</strong></td>
+                  <td>學校合作計畫支持</td>
+                  <td>算法驗證、小型模型推理及教學應用</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h6 style="color:var(--primary)" class="mt-3">預計成果指標</h6>
+          <ul style="font-size:.9rem;line-height:2">
+            <li>完成高效能 AI 硬體伺服器建置，完成 GPU 驅動優化與環境配置</li>
+            <li>制定 GPU 分割策略，完成多使用者容器化管理平台</li>
+            <li>產出硬體操作規範、檢查清單及標準化 SOP 流程手冊</li>
+          </ul>
+          <div class="tag-list mt-2">
+            <span class="tag">H200</span><span class="tag">MIG</span><span class="tag">Docker</span>
+            <span class="tag">LLM</span><span class="tag">RAG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 02 -->
+    <div class="content-card mb-4">
+      <div class="row align-items-start g-4">
+        <div class="col-auto">
+          <div style="font-family:'Noto Serif TC',serif;font-size:3rem;font-weight:700;color:var(--border);line-height:1">02</div>
+        </div>
+        <div class="col">
+          <span class="section-badge">研究工具</span>
+          <h3 class="mt-1" style="color:var(--primary)">佛學研究數位人文平台（DocuSky-Plus）</h3>
+          <p>
+            本計畫旨在導入「個人化」的數位人文學術研究平台，體現「技術賦權（Technological Empowerment）」的理念。
+            透過簡化技術門檻，讓不具備程式開發背景的僧才與學者，亦能主導大規模文獻分析，達成「研究自由」。
+          </p>
+          <ul style="font-size:.9rem;line-height:2">
+            <li>採用「no-code」導向設計，研究者以「專案」模式自行上傳文獻，建立個人化議題資料庫</li>
+            <li>前端使用 Next.js 框架，後端採 Node.js 高效 API 串接</li>
+            <li>針對佛教研究場域進行 UI 優化，設計直觀的壓縮式工作流程</li>
+            <li>整合 CBETA Online、法鼓全集等開源資源的「一鍵轉置」建庫功能</li>
+            <li>整合校內 SSO 單一登入與安全掃描</li>
+          </ul>
+          <h6 style="color:var(--primary)" class="mt-2">預計成果指標</h6>
+          <ul style="font-size:.9rem;line-height:2">
+            <li>完成「法鼓佛學研究數位人文平台」整體建置與正式上線</li>
+            <li>產出《平台使用手冊》及《簡易障礙排除手冊》</li>
+            <li>舉辦至少兩場使用者實體工作坊</li>
+            <li>支援至少 10 人同時並行操作，雲端建庫作業於 15 分鐘內完成</li>
+          </ul>
+          <div class="tag-list mt-2">
+            <span class="tag">DocuSky</span><span class="tag">No-Code</span>
+            <span class="tag">Next.js</span><span class="tag">數位人文</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 03 -->
+    <div class="content-card mb-4">
+      <div class="row align-items-start g-4">
+        <div class="col-auto">
+          <div style="font-family:'Noto Serif TC',serif;font-size:3rem;font-weight:700;color:var(--border);line-height:1">03</div>
+        </div>
+        <div class="col">
+          <span class="section-badge">典藏加值</span>
+          <h3 class="mt-1" style="color:var(--primary)">數位典藏專案深化與 AI 賦能</h3>
+          <p>本中心針對多項具備世界級影響力的典藏專案進行深度優化，將傳統文獻轉化為具備高度智慧的數位資源：</p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="info-box teal">
+                <strong style="color:var(--teal)"><i class="fas fa-book-open me-1"></i>CBETA Online 語意搜尋</strong>
+                <p class="mt-1 mb-0" style="font-size:.84rem">強化 AI 語意搜尋，克服文言文「同義異詞」難題。測試版已累積 19,000 次服務。</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box teal">
+                <strong style="color:var(--teal)"><i class="fas fa-scroll me-1"></i>唯識典籍數位資料庫</strong>
+                <p class="mt-1 mb-0" style="font-size:.84rem">以《成唯識論》為核心，匯集漢、梵、藏文本，整合科判與輔助字詞對應標示。</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box teal">
+                <strong style="color:var(--teal)"><i class="fas fa-torii-gate me-1"></i>中國佛寺志</strong>
+                <p class="mt-1 mb-0" style="font-size:.84rem">AI 輔助 16–20 世紀寺志文獻句讀校正，視覺化呈現區域佛教人物傳記脈絡。</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box teal">
+                <strong style="color:var(--teal)"><i class="fas fa-feather me-1"></i>敦煌文獻（8件核心寫卷）</strong>
+                <p class="mt-1 mb-0" style="font-size:.84rem">標記俗寫字與異體字，產出楷書正字版與手稿標記版對照。</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box teal">
+                <strong style="color:var(--teal)"><i class="fas fa-heart me-1"></i>法的療癒資料庫</strong>
+                <p class="mt-1 mb-0" style="font-size:.84rem">整理漢譯佛典老、病、死主題經文，建置詞彙索引與禁咒治療專題庫。</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box teal">
+                <strong style="color:var(--teal)"><i class="fas fa-gem me-1"></i>金剛經多語經論資料庫</strong>
+                <p class="mt-1 mb-0" style="font-size:.84rem">整合多語經論註疏，打造跨語言、跨文本的數位學術研究門戶。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 04 -->
+    <div class="content-card mb-4">
+      <div class="row align-items-start g-4">
+        <div class="col-auto">
+          <div style="font-family:'Noto Serif TC',serif;font-size:3rem;font-weight:700;color:var(--border);line-height:1">04</div>
+        </div>
+        <div class="col">
+          <span class="section-badge">人才培育</span>
+          <h3 class="mt-1" style="color:var(--primary)">AI 人才培育與行政效能提升</h3>
+          <p>透過科技減輕教職員生的行政負擔，使其能從世俗瑣碎的事項中解脫，進而專注於學術研究與佛法弘傳。</p>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center p-3" style="background:var(--bg-cream);border-radius:8px">
+                <div style="font-size:1.8rem;color:var(--primary)"><i class="fas fa-user-tie"></i></div>
+                <strong style="font-size:.88rem;color:var(--primary)">職員 AI 工作坊</strong>
+                <p style="font-size:.8rem;color:var(--text-muted);margin-top:.4rem">5 堂基礎課程＋定期職員日工作坊</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center p-3" style="background:var(--bg-cream);border-radius:8px">
+                <div style="font-size:1.8rem;color:var(--teal)"><i class="fas fa-chalkboard-teacher"></i></div>
+                <strong style="font-size:.88rem;color:var(--teal)">教師共學社群</strong>
+                <p style="font-size:.8rem;color:var(--text-muted);margin-top:.4rem">每月一次，招募 5 位核心教師</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center p-3" style="background:var(--bg-cream);border-radius:8px">
+                <div style="font-size:1.8rem;color:var(--gold)"><i class="fas fa-laptop"></i></div>
+                <strong style="font-size:.88rem;color:var(--gold)">線上自主學習</strong>
+                <p style="font-size:.8rem;color:var(--text-muted);margin-top:.4rem">3 門線上模組課程，目標 100 人次</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center p-3" style="background:var(--bg-cream);border-radius:8px">
+                <div style="font-size:1.8rem;color:var(--green)"><i class="fas fa-robot"></i></div>
+                <strong style="font-size:.88rem;color:var(--green)">AI 對話機器人</strong>
+                <p style="font-size:.8rem;color:var(--text-muted);margin-top:.4rem">圖書館試點，Claude API + RAG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 05 -->
+    <div class="content-card">
+      <div class="row align-items-start g-4">
+        <div class="col-auto">
+          <div style="font-family:'Noto Serif TC',serif;font-size:3rem;font-weight:700;color:var(--border);line-height:1">05</div>
+        </div>
+        <div class="col">
+          <span class="section-badge">社會服務</span>
+          <h3 class="mt-1" style="color:var(--primary)">校園資安智慧防護與社會產學合作</h3>
+          <p>結合「心靈環保」與技術倫理，構建清淨、安全的數位研究環境，防範 AI 時代的新興風險，並推動國際合作。</p>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="info-box">
+                <strong><i class="fas fa-shield-alt me-1"></i>AI 資安防護平台</strong>
+                <ul style="font-size:.84rem;margin-top:.5rem;padding-left:1.2rem;line-height:1.8">
+                  <li>NLP 辨識敏感資料流動</li>
+                  <li>DLP 辨識率目標 90%+</li>
+                  <li>深偽偵測模組識別率 85%+</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-box">
+                <strong><i class="fas fa-handshake me-1"></i>產學連結</strong>
+                <ul style="font-size:.84rem;margin-top:.5rem;padding-left:1.2rem;line-height:1.8">
+                  <li>協助教師申請至少 1 件 AI 研究案</li>
+                  <li>委託服務與代表性合作案例</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-box">
+                <strong><i class="fas fa-globe-asia me-1"></i>PNC 2026 國際會議</strong>
+                <ul style="font-size:.84rem;margin-top:.5rem;padding-left:1.2rem;line-height:1.8">
+                  <li>第 33 屆太平洋鄰里協會</li>
+                  <li>預計 200–250 位全球學者</li>
+                  <li>半數為國際人士</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/components.js"></script>
+<script>loadNav('projects'); loadFooter();</script>
+</body>
+</html>

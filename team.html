@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中心團隊 | AI人文社科創新與數位典藏研究中心</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .member-card { background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; transition:all .3s; }
+    .member-card:hover { box-shadow:var(--shadow-md); transform:translateY(-3px); }
+    .member-avatar { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--teal)); display:flex; align-items:center; justify-content:center; font-size:1.8rem; color:#fff; margin-bottom:1rem; }
+    .member-name { font-size:1.05rem; font-weight:700; color:var(--primary); }
+    .member-title { font-size:.83rem; color:var(--gold); font-weight:600; }
+    .member-dept { font-size:.82rem; color:var(--text-muted); }
+    .member-tags { margin-top:.75rem; }
+  </style>
+</head>
+<body>
+<div id="nav-container"></div>
+
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item">關於中心</li>
+        <li class="breadcrumb-item active">中心團隊</li>
+      </ol>
+    </nav>
+    <h1>中心團隊</h1>
+    <p style="color:rgba(255,255,255,.7);margin:0">整合跨域專長，推動 AI 與人文社科的深度融合</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <div class="info-box mb-5">
+      <p class="mb-0">
+        本中心團隊由具備佛學、數位人文、資訊科學、AI 技術及行政管理等多元背景之教職員組成，
+        秉持跨域合作精神，共同推動本校的 AI 智慧轉型。
+        詳細成員資料將於中心正式成立後（2026 年 8 月）公告更新。
+      </p>
+    </div>
+
+    <!-- Leadership -->
+    <h3 style="color:var(--primary)" class="mb-4">中心領導</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="member-card">
+          <div class="member-avatar"><i class="fas fa-user-tie"></i></div>
+          <div class="member-name">中心主任</div>
+          <div class="member-title">主任</div>
+          <div class="member-dept">法鼓文理學院</div>
+          <div class="member-tags">
+            <span class="tag">AI 研究</span>
+            <span class="tag ms-1">數位人文</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="member-card">
+          <div class="member-avatar" style="background:linear-gradient(135deg,var(--gold),#D4681E)"><i class="fas fa-user-cog"></i></div>
+          <div class="member-name">副主任（技術）</div>
+          <div class="member-title">副主任</div>
+          <div class="member-dept">資訊科技組</div>
+          <div class="member-tags">
+            <span class="tag">GPU 管理</span>
+            <span class="tag ms-1">LLM</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="member-card">
+          <div class="member-avatar" style="background:linear-gradient(135deg,#2E7A4E,#1B5E20)"><i class="fas fa-archive"></i></div>
+          <div class="member-name">副主任（典藏）</div>
+          <div class="member-title">副主任</div>
+          <div class="member-dept">圖書資訊館數位典藏組</div>
+          <div class="member-tags">
+            <span class="tag">數位典藏</span>
+            <span class="tag ms-1">CBETA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Team -->
+    <h3 style="color:var(--primary)" class="mb-4">研究與技術人員</h3>
+    <div class="row g-3 mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto"><i class="fas fa-database"></i></div>
+          <div class="member-name">資料工程師</div>
+          <div class="member-dept">數位典藏 / AI 賦能</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,var(--teal),#1565C0)"><i class="fas fa-code"></i></div>
+          <div class="member-name">全端工程師</div>
+          <div class="member-dept">DocuSky-Plus / 平台開發</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,#C09A35,#D4681E)"><i class="fas fa-search"></i></div>
+          <div class="member-name">NLP 研究員</div>
+          <div class="member-dept">語意搜尋 / 知識圖譜</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,#2E7A4E,#1B5E20)"><i class="fas fa-shield-alt"></i></div>
+          <div class="member-name">資安工程師</div>
+          <div class="member-dept">資安防護 / DLP</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Join -->
+    <div class="info-box gold text-center">
+      <h5 style="color:#8a6e1a"><i class="fas fa-user-plus me-2"></i>加入我們</h5>
+      <p class="mb-2">本中心持續徵求具備 AI、數位人文、佛學研究等相關背景之研究助理及工作人員。</p>
+      <a href="mailto:ai@dila.edu.tw?subject=職位應徵" class="btn-primary-custom">
+        <i class="fas fa-envelope me-1"></i>來信詢問職缺
+      </a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/components.js"></script>
+<script>loadNav('about'); loadFooter();</script>
+</body>
+</html>
