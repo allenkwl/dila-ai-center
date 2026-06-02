@@ -130,6 +130,12 @@ function buildNav(activePage) {
             </ul>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link${isActive('donation')}" href="donation.html">
+              <i class="fas fa-heart me-1" style="color:#c0392b;font-size:.8rem"></i>捐款贊助
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -184,6 +190,7 @@ function buildFooter() {
           <a href="mailto:ai@dila.edu.tw" class="footer-link"><i class="fas fa-envelope me-1"></i>ai@dila.edu.tw</a>
           <a href="https://www.dila.edu.tw" target="_blank" class="footer-link"><i class="fas fa-external-link-alt me-1"></i>法鼓文理學院官網</a>
           <a href="https://da.dila.edu.tw" target="_blank" class="footer-link"><i class="fas fa-archive me-1"></i>數位典藏組官網</a>
+          <a href="donation.html" class="footer-link"><i class="fas fa-heart me-1"></i>捐款贊助</a>
         </div>
       </div>
 
