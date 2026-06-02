@@ -130,9 +130,10 @@ function buildNav(activePage) {
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link${isActive('donation')}" href="donation.html">
-              <i class="fas fa-heart me-1" style="color:#c0392b;font-size:.8rem"></i>捐款贊助
+          <li class="nav-item ms-1">
+            <a href="donation.html" class="btn btn-sm btn-outline-warning${isActive('donation')}"
+               style="color:#f0c040;border-color:#f0c040;padding:.3rem .7rem;margin-top:.65rem;font-size:.8rem;white-space:nowrap">
+              <i class="fas fa-heart me-1" style="color:#e05050;font-size:.75rem"></i>捐款
             </a>
           </li>
 
