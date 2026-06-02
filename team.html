@@ -9,13 +9,56 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .member-card { background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; transition:all .3s; }
-    .member-card:hover { box-shadow:var(--shadow-md); transform:translateY(-3px); }
-    .member-avatar { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--teal)); display:flex; align-items:center; justify-content:center; font-size:1.8rem; color:#fff; margin-bottom:1rem; }
-    .member-name { font-size:1.05rem; font-weight:700; color:var(--primary); }
-    .member-title { font-size:.83rem; color:var(--gold); font-weight:600; }
-    .member-dept { font-size:.82rem; color:var(--text-muted); }
-    .member-tags { margin-top:.75rem; }
+    .member-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: all .3s;
+      height: 100%;
+    }
+    .member-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+    .member-photo {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--border);
+      margin-bottom: 1rem;
+    }
+    .member-avatar {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; color: #fff;
+      margin-bottom: 1rem;
+    }
+    .member-name  { font-size: 1.1rem; font-weight: 700; color: var(--primary); }
+    .member-title { font-size: .83rem; color: var(--gold); font-weight: 600; margin-top: .2rem; }
+    .member-desc  { font-size: .82rem; color: var(--text-muted); margin-top: .5rem; line-height: 1.7; }
+    .member-tags  { margin-top: .75rem; }
+
+    /* 顧問卡片橫排 */
+    .advisor-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      display: flex; align-items: center; gap: 1.25rem;
+      transition: all .3s;
+      height: 100%;
+    }
+    .advisor-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .advisor-photo {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--border);
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -42,85 +85,159 @@
       <p class="mb-0">
         本中心團隊由具備佛學、數位人文、資訊科學、AI 技術及行政管理等多元背景之教職員組成，
         秉持跨域合作精神，共同推動本校的 AI 智慧轉型。
-        詳細成員資料將於中心正式成立後（2026 年 8 月）公告更新。
       </p>
     </div>
 
-    <!-- Leadership -->
-    <h3 style="color:var(--primary)" class="mb-4">中心領導</h3>
+    <!-- 中心主任 -->
+    <h3 style="color:var(--primary)" class="mb-4">中心主任</h3>
     <div class="row g-4 mb-5">
       <div class="col-md-6 col-lg-4">
-        <div class="member-card">
-          <div class="member-avatar"><i class="fas fa-user-tie"></i></div>
-          <div class="member-name">中心主任</div>
-          <div class="member-title">主任</div>
-          <div class="member-dept">法鼓文理學院</div>
+        <div class="member-card text-center">
+          <img src="images/team/hong-zhenzou.jpg" alt="洪振洲" class="member-photo mx-auto d-block">
+          <div class="member-name">洪振洲</div>
+          <div class="member-title">中心主任</div>
+          <div class="member-desc">
+            佛教學系教授<br>
+            圖書資訊館館長<br>
+            CBETA 基金會執行長
+          </div>
           <div class="member-tags">
-            <span class="tag">AI 研究</span>
-            <span class="tag ms-1">數位人文</span>
+            <span class="tag">數位人文</span>
+            <span class="tag ms-1">CBETA</span>
+            <span class="tag ms-1">佛學研究</span>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="member-card">
-          <div class="member-avatar" style="background:linear-gradient(135deg,var(--gold),#D4681E)"><i class="fas fa-user-cog"></i></div>
-          <div class="member-name">副主任（技術）</div>
-          <div class="member-title">副主任</div>
-          <div class="member-dept">資訊科技組</div>
+    </div>
+
+    <!-- 研究與技術人員 -->
+    <h3 style="color:var(--primary)" class="mb-4">研究與技術人員</h3>
+    <div class="row g-4 mb-5">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,var(--primary),var(--teal))">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="member-name">周邦信</div>
+          <div class="member-title">資料工程師</div>
+          <div class="member-desc">典藏資料處理<br>AI 賦能管線開發</div>
           <div class="member-tags">
-            <span class="tag">GPU 管理</span>
+            <span class="tag">資料工程</span>
+            <span class="tag ms-1">典藏</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,#2D7C9E,#1565C0)">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="member-name">李志賢</div>
+          <div class="member-title">前端工程師</div>
+          <div class="member-desc">平台介面開發<br>DocuSky-Plus 前端</div>
+          <div class="member-tags">
+            <span class="tag">前端開發</span>
+            <span class="tag ms-1">UX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,var(--gold),#D4681E)">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="member-name">高偉倫</div>
+          <div class="member-title">AI 系統工程師</div>
+          <div class="member-desc">GPU 基礎建設<br>LLM 部署與整合</div>
+          <div class="member-tags">
+            <span class="tag">AI 系統</span>
+            <span class="tag ms-1">GPU</span>
             <span class="tag ms-1">LLM</span>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="member-card">
-          <div class="member-avatar" style="background:linear-gradient(135deg,#2E7A4E,#1B5E20)"><i class="fas fa-archive"></i></div>
-          <div class="member-name">副主任（典藏）</div>
-          <div class="member-title">副主任</div>
-          <div class="member-dept">圖書資訊館數位典藏組</div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="member-card text-center">
+          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,#2E7A4E,#1B5E20)">
+            <i class="fas fa-user-clock"></i>
+          </div>
+          <div class="member-name">許佳瑜</div>
+          <div class="member-title">行政秘書</div>
+          <div class="member-desc">中心行政協調<br>活動規劃執行</div>
           <div class="member-tags">
-            <span class="tag">數位典藏</span>
-            <span class="tag ms-1">CBETA</span>
+            <span class="tag">行政管理</span>
+            <span class="tag ms-1">活動統籌</span>
           </div>
         </div>
       </div>
+
     </div>
 
-    <!-- Research Team -->
-    <h3 style="color:var(--primary)" class="mb-4">研究與技術人員</h3>
-    <div class="row g-3 mb-5">
-      <div class="col-md-4 col-lg-3">
-        <div class="member-card text-center">
-          <div class="member-avatar mx-auto"><i class="fas fa-database"></i></div>
-          <div class="member-name">資料工程師</div>
-          <div class="member-dept">數位典藏 / AI 賦能</div>
+    <!-- 中心顧問 -->
+    <h3 style="color:var(--primary)" class="mb-4">中心顧問</h3>
+    <div class="row g-4 mb-5">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="advisor-card">
+          <img src="images/team/wang-yujun.png" alt="王昱鈞" class="advisor-photo">
+          <div>
+            <div class="member-name">王昱鈞</div>
+            <div class="member-title">中心顧問</div>
+            <div class="member-desc">
+              佛教學系教授<br>
+              圖書資訊館資訊組組長<br>
+              圖書組組長
+            </div>
+            <div class="member-tags mt-2">
+              <span class="tag">佛學資訊</span>
+              <span class="tag ms-1">圖書管理</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-3">
-        <div class="member-card text-center">
-          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,var(--teal),#1565C0)"><i class="fas fa-code"></i></div>
-          <div class="member-name">全端工程師</div>
-          <div class="member-dept">DocuSky-Plus / 平台開發</div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="advisor-card">
+          <img src="images/team/hong-yimei.jpg" alt="洪一梅" class="advisor-photo">
+          <div>
+            <div class="member-name">洪一梅</div>
+            <div class="member-title">中心顧問</div>
+            <div class="member-desc">
+              台灣大學資訊工程系<br>博士後研究員<br>
+              台大資工系兼任教授
+            </div>
+            <div class="member-tags mt-2">
+              <span class="tag">NLP</span>
+              <span class="tag ms-1">資訊工程</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-3">
-        <div class="member-card text-center">
-          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,#C09A35,#D4681E)"><i class="fas fa-search"></i></div>
-          <div class="member-name">NLP 研究員</div>
-          <div class="member-dept">語意搜尋 / 知識圖譜</div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="advisor-card">
+          <img src="images/team/cao-deqi.png" alt="曹德啟" class="advisor-photo">
+          <div>
+            <div class="member-name">曹德啟</div>
+            <div class="member-title">中心顧問</div>
+            <div class="member-desc">
+              法鼓文理學院<br>佛教學系<br>博士後研究員
+            </div>
+            <div class="member-tags mt-2">
+              <span class="tag">佛學研究</span>
+              <span class="tag ms-1">數位典藏</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-3">
-        <div class="member-card text-center">
-          <div class="member-avatar mx-auto" style="background:linear-gradient(135deg,#2E7A4E,#1B5E20)"><i class="fas fa-shield-alt"></i></div>
-          <div class="member-name">資安工程師</div>
-          <div class="member-dept">資安防護 / DLP</div>
-        </div>
-      </div>
+
     </div>
 
-    <!-- Join -->
+    <!-- 加入我們 -->
     <div class="info-box gold text-center">
       <h5 style="color:#8a6e1a"><i class="fas fa-user-plus me-2"></i>加入我們</h5>
       <p class="mb-2">本中心持續徵求具備 AI、數位人文、佛學研究等相關背景之研究助理及工作人員。</p>
@@ -128,6 +245,7 @@
         <i class="fas fa-envelope me-1"></i>來信詢問職缺
       </a>
     </div>
+
   </div>
 </section>
 
