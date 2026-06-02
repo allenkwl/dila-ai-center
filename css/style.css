@@ -155,7 +155,7 @@ img { max-width: 100%; }
   display: block; font-family: 'Noto Serif TC', serif;
   font-size: .92rem; font-weight: 700; color: #fff; line-height: 1.25;
 }
-.brand-sub { display: block; font-size: .65rem; color: rgba(255,255,255,.6); font-weight: 300; }
+.brand-sub { display: none; font-size: .65rem; color: rgba(255,255,255,.6); font-weight: 300; }
 
 .main-navbar .nav-link {
   color: rgba(255,255,255,.88) !important;
@@ -421,12 +421,16 @@ img { max-width: 100%; }
   .main-navbar .dropdown-menu { border-top: none; border-left: 3px solid var(--gold); border-radius: 0; }
 }
 
-/* lg ~ xl (992px–1399px)：英文副標題收起，導覽間距縮小 */
-@media (min-width: 992px) and (max-width: 1399px) {
-  .brand-sub { display: none; }
+/* lg ~ xxl (992px–1599px)：導覽間距縮小，brand-sub 預設已隱藏 */
+@media (min-width: 992px) and (max-width: 1599px) {
   .brand-main { font-size: .82rem; }
   .navbar-brand img { height: 34px; margin-right: .6rem; }
   .main-navbar .nav-link { padding: 1.1rem .55rem !important; font-size: .8rem; }
+}
+
+/* ≥ 1600px 超寬螢幕才顯示英文副標題 */
+@media (min-width: 1600px) {
+  .brand-sub { display: block; }
 }
 
 @media (max-width: 768px) {
