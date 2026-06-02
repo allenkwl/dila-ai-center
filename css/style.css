@@ -420,6 +420,15 @@ img { max-width: 100%; }
   .main-navbar .nav-link::after { display: none; }
   .main-navbar .dropdown-menu { border-top: none; border-left: 3px solid var(--gold); border-radius: 0; }
 }
+
+/* lg ~ xl (992px–1399px)：英文副標題收起，導覽間距縮小 */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .brand-sub { display: none; }
+  .brand-main { font-size: .82rem; }
+  .navbar-brand img { height: 34px; margin-right: .6rem; }
+  .main-navbar .nav-link { padding: 1.1rem .55rem !important; font-size: .8rem; }
+}
+
 @media (max-width: 768px) {
   .hero-title { font-size: 1.8rem; }
   .hero-section { min-height: 420px; }
