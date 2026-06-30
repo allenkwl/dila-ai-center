@@ -107,12 +107,8 @@ function buildNav(activePage) {
             </ul>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle${isActive('collab')}" href="#" data-bs-toggle="dropdown">合作交流</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="industry.html">產學合作</a></li>
-              <li><a class="dropdown-item" href="international.html">國際交流</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link${isActive('collab')}" href="industry.html">產學合作</a>
           </li>
 
           <li class="nav-item ms-1">
