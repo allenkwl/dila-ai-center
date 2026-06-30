@@ -94,13 +94,8 @@ function buildNav(activePage) {
             <a class="nav-link${isActive('training')}" href="training.html">教學培訓與資源</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle${isActive('news')}" href="#" data-bs-toggle="dropdown">重要消息</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="announcements.html">重要公告</a></li>
-              <li><a class="dropdown-item" href="media.html">媒體與亮點</a></li>
-              <li><a class="dropdown-item" href="social.html">外部動態入口</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link${isActive('news')}" href="announcements.html">重要公告</a>
           </li>
 
           <li class="nav-item dropdown">
