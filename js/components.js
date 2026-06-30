@@ -90,15 +90,8 @@ function buildNav(activePage) {
             </ul>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle${isActive('training')}" href="#" data-bs-toggle="dropdown">教學培訓與資源</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="staff-workshops.html">職員 AI 工作坊</a></li>
-              <li><a class="dropdown-item" href="faculty.html">教師 AI 成長</a></li>
-              <li><a class="dropdown-item" href="self-learning.html">AI 自主學習課程</a></li>
-              <li><a class="dropdown-item" href="students.html">學生 AI 創客</a></li>
-              <li><a class="dropdown-item" href="materials.html">教材與簡報下載</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link${isActive('training')}" href="training.html">教學培訓與資源</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -174,10 +167,9 @@ function buildFooter() {
 
         <div class="col-lg-2 col-6">
           <h6>教學培訓</h6>
-          <a href="staff-workshops.html" class="footer-link">職員 AI 工作坊</a>
-          <a href="faculty.html" class="footer-link">教師 AI 成長</a>
-          <a href="self-learning.html" class="footer-link">AI 自主學習</a>
-          <a href="students.html" class="footer-link">學生 AI 創客</a>
+          <a href="training.html#staff" class="footer-link">職員 AI 工作坊</a>
+          <a href="training.html#faculty" class="footer-link">教師 AI 成長</a>
+          <a href="training.html#students" class="footer-link">學生 AI 創客</a>
         </div>
 
         <div class="col-lg-2 col-6">
