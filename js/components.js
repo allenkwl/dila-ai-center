@@ -85,7 +85,6 @@ function buildNav(activePage) {
             <a class="nav-link dropdown-toggle${isActive('projects')}" href="#" data-bs-toggle="dropdown">計畫與資源</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="key-projects.html">重點計畫</a></li>
-              <li><a class="dropdown-item" href="services.html">服務申請</a></li>
               <li><a class="dropdown-item" href="tools.html">工具與平台</a></li>
               <li><a class="dropdown-item" href="gpu.html">GPU 與運算資源</a></li>
               <li><a class="dropdown-item" href="downloads.html">下載專區</a></li>
@@ -170,7 +169,6 @@ function buildFooter() {
         <div class="col-lg-2 col-6">
           <h6>計畫與資源</h6>
           <a href="key-projects.html" class="footer-link">重點計畫</a>
-          <a href="services.html" class="footer-link">服務申請</a>
           <a href="tools.html" class="footer-link">工具與平台</a>
           <a href="gpu.html" class="footer-link">GPU 資源</a>
           <a href="downloads.html" class="footer-link">下載專區</a>
