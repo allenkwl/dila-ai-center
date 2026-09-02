@@ -111,6 +111,10 @@ function buildNav(activePage) {
             <a class="nav-link${isActive('collab')}" href="industry.html">產學合作</a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link${isActive('ai-sharing')}" href="ai-sharing.html">下載</a>
+          </li>
+
           <li class="nav-item ms-1">
             <a href="donation.html" class="btn btn-sm btn-outline-warning${isActive('donation')}"
                style="color:#f0c040;border-color:#f0c040;padding:.3rem .7rem;margin-top:.65rem;font-size:.8rem;white-space:nowrap">
